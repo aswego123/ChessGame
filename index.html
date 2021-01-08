@@ -6,8 +6,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/chessboard-1.0.0.js"></script>
         <link rel="stylesheet" href="css/chessboard-1.0.0.css">
+        
         <div id="myBoard" style="width: 400px"></div>
+        <button id="startBtn">Start Position</button>
         <script>
+            //import "./chess.js"
+            /* var mygame = new Chess()
+            var config = {
+                draggable:true,
+                dropOffBoard:'trash',
+                starePieces: true
+            }
+            $(startBtn).on('Click', myBoard.start)  */
             var board = Chessboard('myBoard','start')
         </script>
 </body>
