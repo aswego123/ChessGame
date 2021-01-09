@@ -20,7 +20,7 @@ function onDragStart (source, piece, position, orientation)
 function makeRandomMoves()
 {
     var possibleMoves = newGame.moves()
-    if(possibleMoves.length()==0)
+    if(possibleMoves.length()===0)
     {
         return
     }
@@ -42,7 +42,7 @@ function onDrop(source, target)
     {
         return 'snapback' //illegal move_comes back on its own
     }
-    window.setTimeout(makeRandomMoves, 250)
+    window.setTimeout(makeRandomMove, 250)
 
 }
 
