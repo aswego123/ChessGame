@@ -42,7 +42,7 @@ function onDrop(source, target)
     {
         return 'snapback' //illegal move_comes back on its own
     }
-    window.setTimeout(makeRandomMove, 250)
+    window.setTimeout(makeRandomMoves, 250)
 
 }
 
