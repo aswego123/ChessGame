@@ -53,7 +53,7 @@ function onSnapEnd(){
 var config = {
     draggable: true,
     position: 'start',
-    onDragStart: onStart,
+    onDragStart: onDragStart,
     onDrag: onDrag,
     onSnapEnd: onSnapEnd
 }
