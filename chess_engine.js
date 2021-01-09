@@ -17,7 +17,7 @@ function onDragStart (source, piece, position, orientation)
 }
 
 
-function makeRandomMoves()
+function makeRandomMove()
 {
     var possibleMoves = newGame.moves()
     if(possibleMoves.length()===0)
