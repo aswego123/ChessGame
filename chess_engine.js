@@ -1,5 +1,5 @@
 var board = null
-var newGame = new Chess();
+var newGame = new Chess()
 
 
 function onDragStart (source, piece, position, orientation) 
@@ -38,7 +38,7 @@ function onDrop(source, target)
         promotion: 'q'
     })
 
-    if(newMove == null)
+    if( move === null)
     {
         return 'snapback' //illegal move_comes back on its own
     }
@@ -54,7 +54,7 @@ var config = {
     draggable: true,
     position: 'start',
     onDragStart: onDragStart,
-    onDrag: onDrag,
+    onDrop: onDrop,
     onSnapEnd: onSnapEnd
 }
 
